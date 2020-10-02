@@ -55,6 +55,7 @@ for(i=0; i<3; i++){
 }
 console.log(pokemons)
 function getRandomPokes(){
+    
     for(i=0;i<pokemons.length;i++){
         let specificImg = img + pokemons[i]
         let specificAPI = API + pokemons[i]
@@ -63,6 +64,7 @@ function getRandomPokes(){
     }
   
 }
-getRandomPokes()
+setTimeout(getRandomPokes(), 9000)
+
 
 
